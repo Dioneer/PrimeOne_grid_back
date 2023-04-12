@@ -10076,7 +10076,7 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 767.98px) {
   .header__container {
-    align-items: start;
+    grid-template: minmax(50px, 1fr)/1fr;
   }
 }
 .header__up-line {
@@ -10228,11 +10228,6 @@ readers do not read off random characters that represent icons */
 .up-line__order-link span:hover:after {
   width: 0;
 }
-@media (max-width: 767.98px) {
-  .up-line__order-link span {
-    line-height: 0;
-  }
-}
 @media (max-width: 479.98px) {
   .up-line__order-link span {
     font-size: 0.75rem;
@@ -10243,7 +10238,7 @@ readers do not read off random characters that represent icons */
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  margin: -5% 0px 0px 0px;
+  margin: -4.8% 0px 0px 0px;
 }
 @media (max-width: 767.98px) {
   .down-line {
@@ -10276,12 +10271,14 @@ readers do not read off random characters that represent icons */
   }
 }
 .down-line__link {
+  display: block;
   text-transform: uppercase;
   position: relative;
   font-family: "Akzidenz";
   font-size: 0.9375rem;
   color: #000;
   line-height: 1.5rem;
+  overflow: hidden;
 }
 .down-line__link::before {
   content: "";
@@ -10314,13 +10311,11 @@ readers do not read off random characters that represent icons */
 @media (max-width: 767.98px) {
   .down-line__logo {
     grid-template: auto minmax(auto, 80px) auto/1fr;
-    margin: 0px 40px 0px 0px;
   }
 }
 @media (max-width: 479.98px) {
   .down-line__logo {
     grid-template: auto minmax(auto, 50px) auto/1fr;
-    margin: -2% 60px 0px 0px;
   }
 }
 .down-line__logo img {
@@ -11022,7 +11017,7 @@ body.lock .header__up-line::before {
   width: 100%;
   height: 100%;
   background: #333;
-  padding: 10px;
+  padding: 0px 10px;
   overflow: hidden;
   transform: translate3d(0px, -100%, 0px);
 }
