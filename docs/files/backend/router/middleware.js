@@ -8,6 +8,7 @@ export const parserJSON = (req, res) => {
 	res.send = (code, ct, data) => {
 		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3030')
 		res.writeHead(code), { 'Content-Type': ct }
+		console.log(data);
 		res.end(JSON.stringify(data));
 	}
 };

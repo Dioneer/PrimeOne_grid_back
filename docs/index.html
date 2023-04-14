@@ -206,29 +206,27 @@
 	</div>
 </section>
 			<section class="contacts">
-	<div class="contacts__row">
-		<div class="contacts__column">
-			<div class="contacts__map map-contacts" id="map"></div>
-		</div>
-		<div class="contacts__column">
-			<div class="contacts__form form-contacts">
+	<div class="contacts__column">
+		<div class="contacts__map" id="map"></div>
+	</div>
+	<div class="contacts__column">
+		<div class="contacts__contain">
+			<form action="http://localhost:5050/save_user_message" method="POST" class="form form-contacts goto-error">
 				<div class="form-contacts__title">GET IN TOUCH</div>
-				<form action="http://localhost:5050/save_user_message" method="POST" class="form goto-error">
-					<div class="form__input">
-						<input type="text" data-value="Name" data-error="Enter your name" autocomplete="off" name="userName"
-							class="input req">
-					</div>
-					<div class="form__input">
-						<input type="text" data-value="E-mail or phone number" data-error="Enter e-mail or phone number"
-							autocomplete="off" name="email_or_phone" class="input req">
-					</div>
-					<div class="form__input">
-						<textarea data-value="Your message" data-error="Enter your message" autocomplete="off" name="message"
-							class="textarea req"></textarea>
-					</div>
-					<button type="submit" class="form__btn btn btn_w"><span>SEND MESSAGE</span></button>
-				</form>
-			</div>
+				<div class="form-contacts__input">
+					<input type="text" data-value="Name" data-error="fill the field" autocomplete="off" name="userName"
+						class="input req">
+				</div>
+				<div class="form-contacts__input">
+					<input type="text" data-value="Email of phone namber" data-error="fill the field" autocomplete="off"
+						name="email_or_phone" class="input">
+				</div>
+				<div class="form-contacts__input">
+					<textarea data-value="Your message" data-error="fill the field" autocomplete="off" name="message"
+						class="textarea"></textarea>
+				</div>
+				<button type="submit" class="form-contacts__button btn btn_w"><span>SEND MESSAGE</span></button>
+			</form>
 		</div>
 	</div>
 </section>
