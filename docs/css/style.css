@@ -346,10 +346,13 @@ footer {
   align-items: center;
 }
 .up-line__link span {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
+  line-height: 1.1875rem;
   display: inline-block;
-  padding: 3px;
+  padding: 0 4px;
   color: #000;
+  font-family: "Bebas";
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
 .up-line__link.active span {
@@ -361,7 +364,6 @@ footer {
   font-family: "Akzidenz";
   font-size: 0.9375rem;
   color: #000;
-  line-height: 1.5rem;
   position: relative;
 }
 .up-line__order-link span::after {
@@ -396,6 +398,11 @@ footer {
 @media (max-width: 767.98px) {
   .down-line {
     grid-template: 1fr/auto 1fr auto;
+  }
+}
+@media (min-width: 767.98px) {
+  .down-line {
+    margin: -4.3% 0px 0px 0px;
   }
 }
 .down-line__list {
@@ -458,7 +465,7 @@ footer {
 }
 .down-line__logo {
   display: grid;
-  grid-template: minmax(20px, auto) 1fr minmax(20px, auto)/1fr;
+  grid-template: auto 1fr auto/1fr;
   justify-items: center;
 }
 @media (max-width: 767.98px) {
@@ -479,8 +486,12 @@ footer {
 .logo-down-line__text {
   text-transform: uppercase;
   font-size: 0.75rem;
+  font-family: "Bebas";
   color: #000;
-  letter-spacing: 0.375rem;
+  letter-spacing: 0.5rem;
+}
+.logo-down-line__text:first-child {
+  align-self: end;
 }
 
 .private {
@@ -589,7 +600,7 @@ footer {
 }
 .card-menu__text-block {
   margin: 5% 0px 0px 0px;
-  max-width: 210px;
+  max-width: 200px;
   display: grid;
   grid-auto-flow: row;
   grid-template: auto 1fr auto/1fr;
@@ -602,8 +613,10 @@ footer {
 }
 .card-menu__title {
   text-transform: uppercase;
+  font-family: "Akzidenz";
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.5625rem;
+  letter-spacing: 0.15625rem;
   margin: 0px 0px 5% 0px;
 }
 .card-menu__text {
@@ -635,12 +648,13 @@ footer {
 }
 .up-section__words {
   padding: 8%;
-  font-family: "Bebas";
+  font-family: "Akzidenz";
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3.125rem;
   background: #000;
   text-align: right;
   text-transform: uppercase;
+  letter-spacing: 0.3125rem;
 }
 @media (max-width: 767.98px) {
   .up-section__words {
@@ -706,14 +720,14 @@ footer {
 }
 .item-down-section__title {
   font-family: "Akzidenz";
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.5625rem;
+  letter-spacing: 0.15625rem;
   color: #000;
   text-transform: uppercase;
 }
 .item-down-section__text {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   color: #000;
 }
 
@@ -786,6 +800,7 @@ footer {
 
 .form-contacts {
   max-width: 400px;
+  padding: 0px 3% 0px 0px;
 }
 .form-contacts__title {
   color: #fff;
@@ -963,7 +978,6 @@ footer {
   color: #000;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  font-family: "Bebas";
 }
 
 html.touch .header__link:hover {
